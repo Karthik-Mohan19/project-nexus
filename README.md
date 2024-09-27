@@ -50,11 +50,11 @@ This project is a Django-based restaurant signup and login system that includes 
 ### Installation and Setup
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/project-nexus.git
+    git clone https://github.com/Karthik-Mohan19/project-nexus.git
     ```
 2. **Navigate to the project folder**:
     ```bash
-    cd project2
+    cd Restaurant_project
     ```
 3. **Install dependencies**:
     Make sure to have `pip` installed and run:
