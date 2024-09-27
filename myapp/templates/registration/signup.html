@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant | Sign Up</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <nav id="container">
+        <div class="containerLeft">
+            <h1 class="lefth1">Create New Account</h1><br>
+            <h4 class="lefth4">Already Registered ? <a href="{% url 'login' %}" class="loginButton">Login</a></h4>
+            <br><br><br><br><br>
+            <div class="line"></div>
+            <br><br><br>
+            <p class="leftp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, eius corporis.
+                Molestias illum, iusto blanditiis libero dolorum enim vel maxime sed rem vitae totam officiis! Ab
+                tenetur sed exercitationem doloribus.</p>
+            <br><br><br><br>
+            <a href="#" class="learnMore">Learn More</a>
+        </div>
+        <div class="containerRight">
+            <div class="rightbox">
+                <h1 class="righth1">Sign Up</h1><br><br>
+                <form method="POST" autocomplete="off">
+                    {% csrf_token %}
+                    <div>
+                        <legend class="inputTitle">User_Name</legend>
+                        <input type="text" name="username" required autocomplete="off" placeholder="User Name"
+                            class="input" id="name" value="{{ form.username.value|default_if_none:'' }}">
+
+                    </div><br>
+                    <div>
+                        <legend class="inputTitle">Email</legend>
+                        <input type="email" name="email" required autocomplete="off" placeholder="Email" class="input"
+                            id="email" value="{{ form.email.value|default_if_none:'' }}">
+                    </div><br>
+                    <div>
+                        <legend class="inputTitle">Password</legend>
+                        <input type="password" name="password1" required autocomplete="off" placeholder="Password"
+                            class="input" id="password">
+                    </div><br>
+                    <div>
+                        <legend class="inputTitle">Confirm Password</legend>
+                        <input type="password" name="password2" required autocomplete="off"
+                            placeholder="Confirm Password" class="input" id="password">
+                    </div><br>
+                    <div><input type="submit" value="Sign Up" class="submit"></div>
+                </form>
+                {% if messages %}
+                <ul class="messages" id="errorMessages">
+                    {% for message in messages %}
+                    <li{% if message.tags %} class="{{ message.tags }}" {% endif %} style="color: rgb(252, 20, 20);">{{ message }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+        </div>
+    </nav>
+
+    <script src="{% static 'js/code.js' %}"></script>
+
+
+
+</body>
+
+</html>

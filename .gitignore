@@ -1,0 +1,59 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+venv.bak/
+env.bak/
+
+# Database
+db.sqlite3
+*.sqlite3-journal
+
+# Django stuff:
+*.log
+local_settings.py
+*.pot
+media/
+staticfiles/
+
+# Django migrations
+*/migrations/*
+!*/migrations/__init__.py
+
+# Environment Variables
+.env
+
+# IDE and editor-specific files
+.vscode/
+.idea/
+*.swp
+*.sublime-project
+*.sublime-workspace
+
+# Pytest
+.pytest_cache/
+*.cover
+coverage.xml
+nosetests.xml
+*.log
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Sphinx documentation
+docs/_build/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Cython debug symbols
+cython_debug/
