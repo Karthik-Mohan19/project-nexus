@@ -31,7 +31,6 @@ This project contains the front-end implementation of a login and signup page, b
 
 ### Screenshot
 ![Login Page Screenshot](screenshots/loginpage.png)
-![Signup Page Screenshot](screenshots/signuppage.png)
 
 ---
 
