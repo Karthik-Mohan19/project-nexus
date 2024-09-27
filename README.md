@@ -30,7 +30,8 @@ This project contains the front-end implementation of a login and signup page, b
 2. Open `index.html` in your browser to view the login and signup page.
 
 ### Screenshot
-![Screenshot](path_to_screenshot_if_any)
+![Login Page Screenshot](screenshots/loginpage.png)
+![Signup Page Screenshot](screenshots/signuppage.png)
 
 ---
 
