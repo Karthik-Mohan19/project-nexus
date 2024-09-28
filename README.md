@@ -53,23 +53,26 @@ This project is a Django-based restaurant signup and login system that includes 
     git clone https://github.com/Karthik-Mohan19/project-nexus.git
     ```
 2. **Navigate to the project folder**:
-    ```bash
+   ```bash
+    cd project-nexus
+    ```
+   ```bash
     cd Restaurant_project
     ```
-3. **Install dependencies**:
+4. **Install dependencies**:
     Make sure to have `pip` installed and run:
     ```bash
     pip install -r requirements.txt
     ```
-4. **Migrate the database**:
+5. **Migrate the database**:
     ```bash
     python manage.py migrate
     ```
-5. **Start the server**:
+6. **Start the server**:
     ```bash
     python manage.py runserver
     ```
-6. Open your browser and navigate to `http://127.0.0.1:8000/`.
+7. Open your browser and navigate to `http://127.0.0.1:8000/`.
 
 ### Usage
 - Go to the signup page to create a new account.
