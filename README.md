@@ -28,7 +28,7 @@ This project contains the front-end implementation of a login and signup page, b
     git clone https://github.com/Karthik-Mohan19/project-nexus.git
     ```
 
-2. Open `Sign Up` or `LogIn` in your browser to view the login and signup page.
+2. Open `signup.html` or `login.html` in your browser to view the login and signup page.
 
 ### Screenshot
 ![Login Page Screenshot](screenshots/loginpage.PNG)
