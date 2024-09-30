@@ -1,0 +1,146 @@
+* {
+    margin: 0%;
+    padding: 0%;
+
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg,
+            #ff6f61,
+            #ffcc33,
+            #6dd5ed,
+            #2193b0);
+    color: black;
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s ease-in-out infinite;
+    position: relative;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    border: solid 0px white;
+    padding: 2%;
+    box-shadow: 1px 1px 150px white;
+    
+}
+
+.container h1 {
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container h4 {
+    font-size: 20px;
+    margin: 30px;
+    flex-wrap: nowrap;
+    
+}
+.container a {
+    text-decoration: none;
+    flex-wrap: nowrap;
+    color: rgb(56, 85, 212);
+    background-color: snow;
+    padding: 8px;
+    border-radius: 12px;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: inset 0 0 0 0 rgb(56, 85, 212);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container a:hover{
+    box-shadow: inset 0px -40px 0 0 rgb(56, 85, 212);
+    color: snow;
+}
+.input{
+    width: 20rem;
+    margin: 20px 30px;
+    font-family: serif;
+    border: none;
+    border-bottom: solid 2px white;
+    font-size: 25px;
+    padding: 5px;
+    background-color: transparent;
+}
+.input:focus{
+    outline: none;
+}
+.lineContainer{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 30px;
+    justify-content: space-around;
+}
+
+.lineContainer div label{
+    font-size: 20px;
+}
+.lineContainer div a{
+    background-color: transparent;
+    text-decoration: underline;
+}
+.lineContainer div a:hover{
+    box-shadow: inset 0 0 0 0;
+    color: rgb(56, 85, 212);
+}
+.login{
+    margin: 30px;
+    width: 20rem;
+    height: 3rem;
+    font-size: 20px;
+    font-weight: bold;
+
+    color: rgb(56, 85, 212);
+    background-color: snow;
+    padding: 8px;
+    border: none;
+    border-radius: 12px;
+    font-size: 20px;
+    box-shadow: inset 0 0 0 0 rgb(56, 85, 212);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.login:hover{
+    color: snow;
+    box-shadow: inset 500px 0px 0px 00px rgb(56, 85, 212);
+}
+
+@media only screen and (max-width : 800px) {
+    
+.container h1 {
+    font-size: 30px;
+}
+.container h4 {
+    font-size: 13px;
+}
+.container a{
+    font-size: 10px;
+}
+.input{
+    width: 12rem;
+    font-size: 15px;
+}
+.lineContainer div label{
+    font-size: 12px;
+}
+.login{
+    width: 15rem;
+}
+}
